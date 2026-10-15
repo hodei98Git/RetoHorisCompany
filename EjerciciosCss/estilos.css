@@ -1,0 +1,151 @@
+:root {
+    --principal: #75E6FF;
+    --fondo: #8FFFEE;
+    --boton: #FFFF8C;
+}
+
+
+
+
+body {
+    font-family: fantasy;
+    background-color: #ddfffa;
+}
+
+/* para el titulo */
+h1 {
+    color: var(--principal);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 4;
+}
+
+button {
+    border-radius: 200px;
+    color: var(--boton);
+}
+
+/* para el boton */
+button:hover {
+    background-color: rgb(121, 121, 121);
+}
+
+/* para el el parrafo */
+p {
+    color: var(--fondo);
+    font-size: 20px;
+}
+
+/* para el los link */
+a[href^='https'] {
+
+    text-decoration: none;
+}
+
+
+/* para la carta "producto" */
+.producto {
+    border: 9px solid red;
+    width: 50vw;
+    color: aqua;
+    font-size: 20px;
+}
+
+.producto .precio {
+    color: rgb(255, 192, 55)
+}
+
+.producto button {
+    background-color: var(--boton);
+}
+
+.producto button:hover {
+    background-color: rgb(255, 115, 115);
+}
+
+a[href^='https://tienda.eus'] {
+    text-decoration: red;
+    color: #FFB04F;
+}
+
+/* probando tamaños de cajas */
+#contenedor {
+    background-color: rgb(74, 255, 195);
+    width: 600px;
+}
+
+#contenedor .caja1 {
+    background-color: rgb(255, 202, 96);
+    width: 200px;
+}
+
+#contenedor .caja2 {
+    background-color: rgb(255, 139, 226);
+    width: 50%;
+}
+
+#contenedor .caja3 {
+    background-color: rgb(84, 255, 84);
+    font-size: 1.5rem;
+}
+
+#contenedor .caja3 {
+    background-color: rgb(255, 202, 96);
+    width: 50vw;
+
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 16px;
+    background: #91dcff;
+    color: rgb(108, 109, 110);
+    border-radius: 999px;
+    text-decoration: none;
+    cursor: crosshair;
+
+}
+
+a:hover {
+    color: #FFB04F;
+}
+
+a:visited {
+    color: #ce7aff;
+}
+
+a:focus {
+    outline: 3px solid;
+    outline-offset: 3px;
+}
+
+tr:nth-child(even) {
+    background: rgb(255, 222, 222);
+
+}
+
+tr:hover {
+    background: rgb(241, 255, 112);
+}
+
+table {
+    background-color: #FFB04F;
+    width: 100%;
+    border: 1px solid black;
+}
+
+th,
+td {
+    padding: 6px;
+    text-align: left;
+}
+
+form p {
+    color: rgb(54, 54, 54);
+}
+
+input[type="text"],
+input[type="email"] {
+
+    padding: 4px 16px;
+}

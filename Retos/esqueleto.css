@@ -1,0 +1,29 @@
+body {
+    font-family: optima, sans-serif;
+    background-color: #fdfdfd;
+}
+
+p {
+    color: var(--fondo);
+    font-size: 20px;
+}
+
+img.imagenDer {
+    float: right;
+    margin: 0 0 10px 10px;
+
+}
+
+.logoder {
+
+    float: right;
+}
+
+.menu {
+    float: right;
+}
+
+#centro {
+    justify-content: center;
+
+}

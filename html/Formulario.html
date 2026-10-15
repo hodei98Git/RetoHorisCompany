@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Esto es para un formulario</title>, 
+</head>
+
+<body>
+    
+    <form>
+        <fieldset>
+            <label for="usuario"> Nombre de usuario </label><br/>
+            <input type="text" name="usuario" id="usuario"/> <br/>
+            <label for="clave"> Clave: </label><br>
+            <input type="password" name="clave" id="clave"/><br/>
+
+            <input type="radio" name="genero" value="Mujer" id="Mujer" checked>
+            <label for="Mujer"> Mujer</label><br/> 
+            <input type="radio" name="genero" value="Hombre" id="Hombre" checked>
+            <label for="Hombre"> Hombre</label><br/>
+
+            <input type="checkbox" name="vehiculo1" value="bici" id="bici"/>
+            <label for="bici"> Tengo bici</label><br/> 
+            <input type="checkbox" name="vehiculo2" value="coche" id="coche"/>
+            <label for="coche"> Tengo coche</label><br/> 
+            <input type="range" name="Rango" value="numero" id="numero"><br>
+        
+            <p>Quien es mas gracioso?</p>
+            <select>
+                
+                <option value="ricardo">Ricardo</option>
+                <option value="sivied">Sivied</option>
+                <option value="hodei" selected>Hodei</option>
+            </select><br>
+        </fieldset>
+
+        
+
+
+
+
+        <input type="submit" value="Enviar"/>
+        <input type="reset" value="Reset"/>
+        <input type="button" onclick="alert('Hola')" value=" Haz click">
+    </form>
+
+</body>
+</html>
