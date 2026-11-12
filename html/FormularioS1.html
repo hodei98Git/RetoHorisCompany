@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción | RockTheSport</title>
+    <link rel="stylesheet" href="../css.css">
+</head>
+<body>
+    <header>
+        <h1 id="titulo">
+            <a href="index.html" class="marca">
+                <img src="../rock2.jpg" alt="" width="400" height="280">
+                RockTheSport
+            </a>
+        </h1>
+        <input class="barra-busqueda" type="search" placeholder="Buscar eventos..." aria-label="Buscar eventos">
+        <nav>
+            <a href="index.html" class="boton">Inicio</a>
+            <a href="eventos.html" class="boton">Eventos</a>
+            <a href="productos.html" class="boton">Productos</a>
+        </nav>
+        
+    </header>
+
+    <main>
+        <h2>Inscripción</h2>
+
+        <form class="formulario" action="#" method="post">
+            <div class="campo">
+                <label for="nombre">Nombre y apellidos</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="campo">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="campo">
+                <label for="evento">Evento</label>
+                <select id="evento" name="evento" required>
+                    <option value="">-- Elige un evento --</option>
+                    <option value="costa-brava">Desafío Costa Brava</option>
+                    <option value="ruta-del-sol">Ruta del Sol</option>
+                    <option value="travesia-ebro">Travesía del Ebro</option>
+                    <option value="pequenos-campeones">Pequeños Campeones</option>
+                </select>
+            </div>
+
+            <button type="submit" class="boton">Inscribirme</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-contenido">
+            <div>
+                <p class="marca">
+                    <img src="../rock2.jpg" alt="" width="400" height="280">
+                    RockTheSport
+                </p>
+                <p>Deporte solidario para todos.</p>
+            </div>
+
+            <div>
+                <h3>Patrocinadores</h3>
+                <p>Hori's Company</p>
+            </div>
+
+            <div>
+                <h3>Contacto</h3>
+                <p>info@rockthesport.com</p>
+                <p>Síguenos en redes sociales</p>
+            </div>
+        </div>
+
+
+    </footer>
+</body>
+</html>

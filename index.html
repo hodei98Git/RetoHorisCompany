@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,72 +8,102 @@
 </head>
 <body>
     <header>
-        <h1 id="titulo">RockTheSport</h1>
+        <h1 id="titulo" class="marca">
+            <img src="rock2.jpg" alt="" width="400" height="280">
+            RockTheSport
+        </h1>
+        <input class="barra-busqueda" type="search" placeholder="Buscar eventos..." aria-label="Buscar eventos">
         <nav>
             <a href="#titulo" class="boton">Inicio</a>
             <a href="eventos.html#titulo" class="boton">Eventos</a>
-            <a href="" class="boton">Productos</a>
+            <a href="productos.html" class="boton">Productos</a>
         </nav>
         
-        <input class="barra-bus" type="search">
     </header>
-    
+
     <main>
-        <img class="rockDsport" src="rock2.jpg" alt="Rock_The_Sport_Logo" width="400 px" height="280 px">
-        <section id="nosotros">
-            <h2 >Sobre Nosotros</h2>
-            <p><strong>Somor organizadores de eventos deportivos por todo españa, desde eventos beneficos <br>
-            para recaudar dinero para niños afectados por enfermedades y otras dificultades hasta hacer <br>
-            conciencia por la salud. Somos para todos</strong></p>
+        <section id="nosotros" class="nosotros">
+            <div class="nosotros-texto">
+                <h2>Sobre nosotros</h2>
+                <p>
+                    Somos organizadores de eventos deportivos por toda España: desde eventos benéficos
+                    para recaudar dinero para niños afectados por enfermedades y otras dificultades,
+                    hasta actividades para concienciar sobre la salud.
+                </p>
+                <p><strong>¡Somos para todos!</strong></p>
+            </div>
+            <img class="logo" src="rock2.jpg" alt="Logo de Rock The Sport" width="400" height="280">
         </section>
-        <section id="eventos_populares">
-            <h2 >Eventos Populares</h2>
-            <ul>
-                <li>Noviembre 30. Triatlon de 60 km</li> <br>
-                <li>Enero . Inicio del 2027</li> <br>
-                <li>Febrero 18. Dia Mundial del Vino. Cada 10 kilometros lleva una botella</li> <br>
-                <li>Diciembre 20. Dia Mundial de la Sangria. Cada 10 kilometros lleva una vaso lleno</li> <br>
-            </ul>
+
+        <section id="eventos-beneficos">
+            <h2>Eventos populares y benéficos</h2>
+            <p class="subtitulo">Calendario de eventos solidarios</p>
+
+            <div class="tarjetas">
+                <article class="tarjeta">
+                    <p class="fecha">30 de noviembre de 2026</p>
+                    <h3>Triatlón de 60 km</h3>
+                    <p>Triatlón Solidario por la Investigación Infantil. ¡Cada kilómetro cuenta para cambiar vidas!</p>
+                    <p class="objetivo"><strong>Objetivo:</strong> recaudar fondos para la investigación infantil.</p>
+                    <a href="#" class="boton boton-tarjeta">Más información</a>
+                </article>
+
+                <article class="tarjeta">
+                    <p class="fecha">20 de diciembre de 2026</p>
+                    <h3>Día Mundial de la Sangría</h3>
+                    <p>Caminata "Copa Llena de Alegría". Cada 10 kilómetros recorridos se lleva un vaso lleno.</p>
+                    <p class="objetivo"><strong>Objetivo:</strong> beneficio para comedores sociales en Navidad.</p>
+                    <a href="#" class="boton boton-tarjeta">Más información</a>
+                </article>
+
+                <article class="tarjeta">
+                    <p class="fecha">Enero de 2027</p>
+                    <h3>Inicio del 2027</h3>
+                    <p>"Primeros Pasos por la Esperanza". Cierre del ciclo benéfico y entrega de resultados.</p>
+                    <p class="objetivo"><strong>Objetivo:</strong> compartir los resultados de las iniciativas solidarias.</p>
+                    <a href="#" class="boton boton-tarjeta">Más información</a>
+                </article>
+
+                <article class="tarjeta">
+                    <p class="fecha">18 de febrero de 2027</p>
+                    <h3>Día Mundial del Vino</h3>
+                    <p>Maratón "Por un Mundo Seco". Cada 10 kilómetros recorridos se lleva una botella.</p>
+                    <p class="objetivo"><strong>Objetivo:</strong> recaudar fondos para proyectos de saneamiento en África.</p>
+                    <a href="#" class="boton boton-tarjeta">Más información</a>
+                </article>
+            </div>
         </section>
-        <section id="eventos_beneficos">
-            <h2 >Eventos Beneficos</h2>
-            <ul>
-                <li>
-                    30 de noviembre: <br>
-                    Triatlón Solidario por la Investigación Infantil. <br>
-                    ¡Cada kilómetro cuenta para cambiar vidas! <br><br>
-                </li>
-                <li>
-                    Enero 2027: <br>
-                    "Primeros Pasos por la Esperanza". <br>
-                    Cierre del ciclo benéfico y entrega de resultados. <br><br>
-                </li>
-                <li>
-                    18 de febrero: <br>
-                    Maratón "Por un Mundo Seco". <br>
-                    Recaudación de fondos para proyectos de saneamiento en África. <br>
-                    ¡Cada 10 km recorridos simbolizan una botella de vida! <br><br>
-                </li>
-                <li>
-                    20 de diciembre: <br>
-                    Caminata "Copa Llena de Alegría". <br>
-                    Beneficio para comedores sociales en Navidad. <br>
-                    ¡Cada 10 km recorridos se entregan vasos de esperanza para familias necesitadas! <br><br>
-                </li>
-            </ul>
-        </section>
-        <footer>
-            <section id="Patrocinio">
+    </main>
+
+    <footer>
+        <div class="footer-contenido">
+            <div>
+                <p class="marca">
+                    <img src="rock2.jpg" alt="" width="400" height="280">
+                    RockTheSport
+                </p>
+                <p>Deporte solidario para todos.</p>
+            </div>
+
+            <div>
                 <h3>Patrocinadores</h3>
                 <p>Hori's Company</p>
-            </section>
-        </footer>
-    </main>
+            </div>
+
+            <div>
+                <h3>Contacto</h3>
+                <p>info@rockthesport.com</p>
+                <p>Síguenos en redes sociales</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
 
-  
 
+
+
+  
 
 
 

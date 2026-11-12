@@ -1,38 +1,274 @@
-.boton{
-    display: inline-block;
-  background-color: #83c3ff;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  cursor: pointer;
+
+* {
+    box-sizing: border-box;
+}
+ 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e6f7f5;
+    color: #222;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+ 
+h2 {
+    color: #0f766e;
+}
+ 
+/* ===== Cabecera (flexbox) ===== */
+header {
+    background-color: #0f766e;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+ 
+header h1 {
+    color: white;
+    margin: 0;
 }
 
+header h1 a{
+    color: white;
+    text-decoration: none;
+}
+ 
+/* Logo + nombre */
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+ 
+.marca img {
+    height: 50px;
+    width: auto;
+    border-radius: 8px;
+}
+ 
+nav {
+    display: flex;
+    gap: 10px;
+}
+ 
+.boton {
+    background-color: #2b7fd1;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+ 
 .boton:hover {
-  background-color: #83c3ff;
+    background-color: #1c5fa3;
+}
+ 
+/* Contorno al navegar con el teclado */
+.boton:focus {
+    outline: 3px solid #1c5fa3;
+    outline-offset: 3px;
+}
+ 
+header .boton:focus {
+    outline-color: white;
+}
+ 
+/* Botón de la página  */
+.activo {
+    background-color: white;
+    color: #0f766e;
+}
+ 
+.activo:hover {
+    background-color: #e6f7f5;
+}
+ 
+.barra-busqueda {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    width: 400px;
 }
 
-header{
-  border-color: red  ;
-  background-color: rgb(49, 233, 193);
-  padding: 15px;
-  border-radius: 15px;
-  display: flex;
-  justify-content: center;
+.formulario {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.barra-bus{
-  display: flex;
-  justify-content: center;
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
-main{
-  background-color: aquamarine;
-  border-radius: 15px;
-    padding: 1;
-
+.campo label {
+    font-weight: bold;
 }
-.rockDsport{
-   float: right;
-    margin: 20px 20px;
+
+.campo input,
+.campo select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+ 
+/* ===== Contenido principal ===== */
+main {
+    max-width: 1500px;
+    width: 100%;
+    margin: 30px auto;
+    padding: 0 20px;
+    flex: 1;
+}
+
+
+section {
+    margin-bottom: 40px;
+}
+ 
+/* ===== Sobre nosotros ===== */
+.nosotros {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+ 
+.nosotros-texto {
+    flex: 1;
+    min-width: 250px;
+}
+ 
+.logo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+ 
+/* ===== Tarjetas de eventos (grid) ===== */
+.subtitulo {
+    color: #666;
+    margin-top: -10px;
+}
+ 
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+ 
+.tarjeta {
+    background-color: white;
+    border-radius: 15px;
+    border-top: 5px solid #2b7fd1;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s;
+    margin: 1px;
+}
+ 
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+ 
+.tarjeta h3 {
+    color: #0f766e;
+    margin: 5px 0 10px;
+}
+ 
+.fecha {
+    color: #2b7fd1;
+    font-weight: bold;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    margin: 0;
+}
+ 
+.objetivo {
+    margin-top: auto;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+ 
+.boton-tarjeta {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.centrado {
+    margin-top: 20px;
+}
+ 
+/* ===== Footer ===== */
+footer {
+    background-color: #0f766e;
+    color: white;
+    padding: 30px 40px 15px;
+}
+ 
+.footer-contenido {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+ 
+footer h3 {
+    margin: 0 0 10px;
+}
+ 
+footer p {
+    margin: 0 0 5px;
+}
+ 
+footer .marca {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+ 
+footer .marca img {
+    height: 40px;
+}
+ 
+.copyright {
+    text-align: center;
+    font-size: 0.9em;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: 20px;
+    padding-top: 15px;
+}
+
+.partirEvento{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.imagenEventos{
+    width: 60%;
+    height: 60%;
+
 }
